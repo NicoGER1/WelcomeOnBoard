@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+/* style du body */
+
+body {
+  margin: 0;
+  line-height: 1.5;
+  background-color: white;
+}
+
+/* style de la bannière */
+.logo {
+  width: auto;
+  height: 60px;
+  padding: 0.5rem;
+}
+
+.nav {
+  background-color: #a306b6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0rem 2rem 0rem 0rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Source sans 3";
+  font-weight: bold;
+}
+
+/* style du header */
+
+.hero-banner {
+  background-color: #a306b6;
+  padding: auto;
+  margin: auto;
+  color: white;
+  font-family: "Montserrat";
+}
+
+.avatar {
+  width: auto;
+  height: 200px;
+  border: 5px solid white;
+  border-radius: 100%;
+}
+
+.section {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 40px 0;
+  align-items: center;
+}
+
+/* style section article */
+
+.main {
+  padding: 1rem 7rem 1rem 7rem;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  color: #a306b6;
+  font-family: "Montserrat";
+}
+
+.recent-article {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: "Montserrat";
+}
+
+.responsive,
+.scalable,
+.inclusive {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+/* Taille des img */
+
+.responsive-img {
+  width: 52%;
+}
+
+.scalable-img {
+  width: 35%;
+}
+
+.inclusive-img {
+  width: 48%;
+}
+
+button {
+  background-color: #a306b6;
+  border: 0;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.8rem;
+  color: white;
+  font-weight: bold;
+  font-family: "Source sans 3";
+}
+
+.about {
+  font-family: "Montserrat";
+  padding: 0 3rem 0 3em;
+}
+
+/* style du About */
+h2 {
+  text-align: center;
+  color: #a306b6;
+}
+
+p {
+  -ms-flex-align: center;
+  font-family: "Source sans 3";
+}
+
+/* style du footer */
+footer {
+  background-color: #d9d9d9;
+  text-align: center;
+  padding: 5px;
+}
+
+span {
+  color: #a306b6;
+  font-family: "Source sans 3";
+}
+
+/* Style Media Queries */
+@media screen and (max-width: 992px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .recent-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 1rem 2rem 1rem 2rem;
+    margin: auto;
+  }
+}
